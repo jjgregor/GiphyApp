@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         (application as GiphyApp).getAppComponent().inject(this)
 
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        adapter = GifAdapter(arrayListOf())
+        adapter = GifAdapter()
 
         initObserver()
         setupRecycler()

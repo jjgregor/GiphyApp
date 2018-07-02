@@ -17,7 +17,7 @@ import com.jason.giphyapp.activities.DetailsActivity
 import com.jason.giphyapp.models.Gif
 import kotlinx.android.synthetic.main.recycler_view_item.view.*
 
-class GifAdapter(val gifs: ArrayList<Gif>) : RecyclerView.Adapter<GifAdapter.ViewHolder>() {
+class GifAdapter(val gifs: ArrayList<Gif> = arrayListOf()) : RecyclerView.Adapter<GifAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.recycler_view_item, parent, false))
 

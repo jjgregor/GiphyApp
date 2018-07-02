@@ -68,12 +68,4 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glide_version"
     annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
 
-    // SwipeStack
-    implementation "com.mindorks.android:placeholderview:$swipe_stack_version"
-    annotationProcessor "com.mindorks.android:placeholderview-compiler:$swipe_stack_version"
-
-    // Stetho
-    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
-    implementation 'com.facebook.stetho:stetho:1.5.0'
-
 }
