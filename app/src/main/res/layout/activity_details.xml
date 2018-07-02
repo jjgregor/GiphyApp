@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.DetailsActivity">
+
+        <ImageView
+            android:id="@+id/gif_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin2"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/gif_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/gif_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin16"
+            app:layout_constraintBottom_toTopOf="@+id/user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gif_image" />
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@style/TextAppearance.Details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            app:layout_constraintBottom_toBottomOf="@+id/type"
+            app:layout_constraintEnd_toStartOf="@+id/share"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gif_progress"
+            tools:text="Username: Jason" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin16"
+            android:src="@drawable/ic_share"
+            app:layout_constraintStart_toEndOf="@+id/user_name"
+            app:layout_constraintBottom_toTopOf="@+id/type"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/TextAppearance.Details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/url"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_name"
+            tools:text="Type: Gif" />
+
+        <TextView
+            android:id="@+id/url"
+            style="@style/TextAppearance.Details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type"
+            tools:text="URL: https://gifsoup.com/view/2816270/musta-been-hardup-for-extras.html" />
+
+        <TextView
+            android:id="@+id/source"
+            style="@style/TextAppearance.Details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="@dimen/margin16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/url"
+            tools:text="Source: https://evelinag.com/blog/2015/11-18-f-tackles-james-bond/"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

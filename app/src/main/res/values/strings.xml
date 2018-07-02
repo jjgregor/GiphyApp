@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GiphyApp</string>
+    <string name="api">https://api.giphy.com/</string>
+    <string name="api_key">vnJksq2y4ecx8Fddj1WTfAhqTyaJeR4t</string>
+    <string name="search_for_results">Search for some dank gifs!</string>
+    <string name="search_hint">Search for gifs…</string>
+    <string name="search">Search</string>
+    <string name="empty_search_results">Looks like we couldn\'t find any gifs for that, try another search!</string>
+    <string name="details_load_error">An error occurred, please try again</string>
+    <string name="user_name_formatted">Username: %s</string>
+    <string name="type_formatted">Type: %s</string>
+    <string name="url_formatted">URL: %s</string>
+    <string name="source_formatted">Source: %s</string>
+    <string name="image_transition">image_transition</string>
+    <string name="unknown">unknown</string>
+</resources>
